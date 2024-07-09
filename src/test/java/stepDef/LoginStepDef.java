@@ -25,7 +25,7 @@ public class LoginStepDef {
         driver= CreateDriver.getInstance().getDriver();
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
-        System.out.println("This is from User 1");
+        System.out.println("Changes from user 2 after merge");
        }
 
 
