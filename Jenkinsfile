@@ -18,10 +18,11 @@ pipeline {
             }
         }
 
-        stage('Deployment Stage') {
+        stage('Cucumber Stage') {
             steps {
-                withMaven {
-                    bat 'mvn deploy'
+                cucumber buildStatus: "UNSTABLE", {
+                    fileIncludePattern: "**/cucumber.json",
+                    jsonReportDirectory: 'target'   
                 }
             }
         }
