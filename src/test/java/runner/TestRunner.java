@@ -12,7 +12,7 @@ import java.awt.*;
 @CucumberOptions(
         features = "src/test/resources",
         glue= {"stepDef", "hooks"},
-        plugin = "html:target/cucumber-reports/index.html",
+        plugin = {"html:target/cucumber-html-report", "json:target/cucumber-json-report.json" },
         monochrome = true
 )
 
