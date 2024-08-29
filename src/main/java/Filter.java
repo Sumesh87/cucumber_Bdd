@@ -7,4 +7,10 @@ public class Filter {
         System.out.println("Filter00");
     }
 
+
+    public void add()
+    {
+        System.out.println("new method ");
+    }
+
 }
