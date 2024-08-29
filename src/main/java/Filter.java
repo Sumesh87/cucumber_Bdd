@@ -11,6 +11,7 @@ public class Filter {
     public void add()
     {
         System.out.println("new method ");
+        System.out.println("adding two strings");
     }
 
 }
