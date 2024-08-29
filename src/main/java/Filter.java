@@ -11,6 +11,8 @@ public class Filter {
     public void add()
     {
         System.out.println("new method ");
+
+        System.out.println("adding 2 numbers");
     }
 
 }
